@@ -18,4 +18,11 @@ module.exports = {
   rules: {
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
   },
+  settings: {
+    "import/resolver": {
+      "babel-plugin-root-import": {
+        rootPathSuffix: "src",
+      },
+    },
+  },
 };
